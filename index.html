@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Закажите кастомный ПК 2025 года с высокопроизводительными комплектующими и премиальным сервисом." />
+    <title>NEOCRAFT PC — Кастомные ПК 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" data-aos="fade-down">
+      <div class="logo">NEOCRAFT<span>PC</span></div>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#configurator">Конфигуратор</a>
+        <a href="#lineup">Коллекции</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="btn primary" data-scroll="#configurator">Собрать ПК</button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__content" data-aos="fade-up">
+          <p class="eyebrow">Кастомные ПК нового поколения</p>
+          <h1>Соберите идеальный ПК под игры, работу и метавселенную</h1>
+          <p class="lead">
+            Точные инженерные расчёты, строгая эстетика и бескомпромиссная мощь. Мы создаём кастомные сборки с гарантией 3 года и 24/7 поддержкой.
+          </p>
+          <div class="hero__actions">
+            <button class="btn primary" data-scroll="#configurator">Запустить конфигуратор</button>
+            <button class="btn ghost" data-scroll="#lineup">Посмотреть коллекции</button>
+          </div>
+          <div class="hero__stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat__label">Средний FPS в AAA</span>
+              <span class="stat__value">180+</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__label">Время сборки</span>
+              <span class="stat__value">5 дней</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__label">Стартовая гарантия</span>
+              <span class="stat__value">36 мес.</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" data-aos="zoom-in">
+          <div class="glass-card">
+            <div class="glow"></div>
+            <div class="spec">
+              <span>RTX 5090 Apex</span>
+              <span>24 ГБ GDDR7X</span>
+            </div>
+            <div class="spec">
+              <span>Ryzen 9 Quantum</span>
+              <span>5.6 ГГц Boost</span>
+            </div>
+            <div class="spec">
+              <span>NeonFlow Cooling</span>
+              <span>Жидкий азот</span>
+            </div>
+            <div class="floating-tag">2K / 4K / VR</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners" aria-label="Партнёры">
+        <div class="ticker" role="list">
+          <span role="listitem">NVIDIA ELITE</span>
+          <span role="listitem">AMD PRO LAB</span>
+          <span role="listitem">CORSAIR INFINITY</span>
+          <span role="listitem">ASUS REPUBLIC</span>
+          <span role="listitem">MSI SIGNATURE</span>
+          <span role="listitem">G.SKILL QUANTUM</span>
+        </div>
+      </section>
+
+      <section id="configurator" class="configurator" aria-labelledby="configurator-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Интерактивный конфигуратор</p>
+          <h2 id="configurator-title">Выберите сценарий — мы подберём идеальную сборку</h2>
+          <p>В реальном времени меняйте параметры сборки, отслеживайте бюджет, температуру и предполагаемую производительность.</p>
+        </div>
+        <div class="configurator__grid">
+          <form class="config-form" aria-label="Параметры сборки" data-aos="fade-right">
+            <div class="field">
+              <label for="profile">Профиль использования</label>
+              <div class="tabs" role="tablist">
+                <button type="button" role="tab" aria-selected="true" data-profile="gaming" class="tab active">Игровой</button>
+                <button type="button" role="tab" data-profile="creator" class="tab">Создатель контента</button>
+                <button type="button" role="tab" data-profile="pro" class="tab">Профессионал</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cpu">Процессор</label>
+              <select id="cpu" name="cpu" data-component>
+                <option value="ryzen9" data-price="82000" data-tdp="125">AMD Ryzen 9 9950X Quantum — 82 000 ₽</option>
+                <option value="i9" data-price="88000" data-tdp="140">Intel Core i9-15900K Fusion — 88 000 ₽</option>
+                <option value="threadripper" data-price="159000" data-tdp="280">AMD Threadripper Neo 7995WX — 159 000 ₽</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="gpu">Графика</label>
+              <select id="gpu" name="gpu" data-component>
+                <option value="rtx5090" data-price="196000" data-tdp="450">NVIDIA GeForce RTX 5090 Apex — 196 000 ₽</option>
+                <option value="rtx5080" data-price="146000" data-tdp="360">NVIDIA GeForce RTX 5080 Ti — 146 000 ₽</option>
+                <option value="radeon" data-price="132000" data-tdp="320">AMD Radeon RX 9090 Halo — 132 000 ₽</option>
+              </select>
+            </div>
+
+            <div class="field inline">
+              <label for="ram">Оперативная память</label>
+              <select id="ram" name="ram" data-component>
+                <option value="32" data-price="22000">32 ГБ DDR5 7200 MHz RGB — 22 000 ₽</option>
+                <option value="64" data-price="42000">64 ГБ DDR5 7600 MHz RGB — 42 000 ₽</option>
+                <option value="128" data-price="78000">128 ГБ DDR5 8000 MHz RGB — 78 000 ₽</option>
+              </select>
+
+              <label for="storage">Хранилище</label>
+              <select id="storage" name="storage" data-component>
+                <option value="2tb" data-price="26500">SSD 2 ТБ PCIe 5.0 — 26 500 ₽</option>
+                <option value="4tb" data-price="44900">SSD 4 ТБ PCIe 5.0 — 44 900 ₽</option>
+                <option value="8tb" data-price="89900">SSD 8 ТБ PCIe 5.0 — 89 900 ₽</option>
+              </select>
+            </div>
+
+            <fieldset class="field" aria-labelledby="extras-label">
+              <legend id="extras-label">Дополнительно</legend>
+              <label class="checkbox">
+                <input type="checkbox" name="extras" value="cooling" data-price="28000" />
+                <span>Жидкостная система охлаждения NeonFlow — 28 000 ₽</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="extras" value="sleeves" data-price="6500" />
+                <span>Премиальная оплётка кабелей — 6 500 ₽</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="extras" value="rgb" data-price="8400" />
+                <span>Интерактивная подсветка Aurora Sync — 8 400 ₽</span>
+              </label>
+            </fieldset>
+
+            <div class="field">
+              <label for="budget">Целевая стоимость</label>
+              <input id="budget" type="range" min="150000" max="600000" step="10000" value="350000" />
+              <div class="range-values">
+                <span>150 000 ₽</span>
+                <span id="budgetValue">350 000 ₽</span>
+                <span>600 000 ₽</span>
+              </div>
+            </div>
+          </form>
+
+          <div class="summary" data-aos="fade-left" role="status">
+            <div class="summary__header">
+              <h3>Итоговая сборка</h3>
+              <span class="badge">обновляется в реальном времени</span>
+            </div>
+            <div class="summary__price">
+              <span class="label">Предварительная стоимость</span>
+              <span class="value" id="totalPrice">0 ₽</span>
+            </div>
+            <div class="summary__metrics">
+              <div class="metric">
+                <span class="metric__label">Температурный запас</span>
+                <div class="progress">
+                  <div class="progress__bar" id="coolingScore" style="width: 70%"></div>
+                </div>
+                <span class="metric__value" id="coolingLabel">70%</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">FPS в 4K Ultra</span>
+                <span class="metric__value" id="fpsLabel">0</span>
+              </div>
+              <div class="metric">
+                <span class="metric__label">Рендер 8K (мин)</span>
+                <span class="metric__value" id="renderLabel">0</span>
+              </div>
+            </div>
+            <div class="summary__selected" id="summaryList"></div>
+            <button class="btn primary full">Заказать консультацию</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="lineup" class="lineup" aria-labelledby="lineup-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Готовые коллекции</p>
+          <h2 id="lineup-title">Выберите стиль — мы настроим детали под вас</h2>
+        </div>
+        <div class="lineup__grid">
+          <article class="card" data-aos="zoom-in">
+            <div class="card__tag">Игры / Киберспорт</div>
+            <h3>NEOCRAFT Vanguard</h3>
+            <p>Пиковая мощность и сверхнизкие задержки. Создан для соревнований и VR.</p>
+            <ul>
+              <li>FPS 240+ в Valorant 4K</li>
+              <li>Поддержка Wi-Fi 7 и 10G LAN</li>
+              <li>RGB-подсветка с синхронизацией через приложение</li>
+            </ul>
+            <div class="card__footer">
+              <span class="price">от 289 000 ₽</span>
+              <button class="btn ghost" data-scroll="#contact">Заказать</button>
+            </div>
+          </article>
+
+          <article class="card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card__tag">Контент / AI</div>
+            <h3>NEOCRAFT Origin Studio</h3>
+            <p>Идеален для 3D, Unreal Engine, нейронных сетей и цветокоррекции.</p>
+            <ul>
+              <li>Тройная система охлаждения жидкостью</li>
+              <li>128 ГБ DDR5 с запасом для виртуализации</li>
+              <li>Шина PCIe 5.0 x16 для плат расширения</li>
+            </ul>
+            <div class="card__footer">
+              <span class="price">от 379 000 ₽</span>
+              <button class="btn ghost" data-scroll="#contact">Заказать</button>
+            </div>
+          </article>
+
+          <article class="card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card__tag">Компакт / Дом</div>
+            <h3>NEOCRAFT Pulse</h3>
+            <p>Минималистичный форм-фактор с бесшумной работой и AR-панелью.</p>
+            <ul>
+              <li>Шум не выше 22 дБ при нагрузке</li>
+              <li>Гибридная система охлаждения графита и жидкости</li>
+              <li>Смарт-панель с виджетами температуры и FPS</li>
+            </ul>
+            <div class="card__footer">
+              <span class="price">от 249 000 ₽</span>
+              <button class="btn ghost" data-scroll="#contact">Заказать</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits" aria-labelledby="benefits-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Почему NEOCRAFT</p>
+          <h2 id="benefits-title">Инженерный подход и сервиса премиум-класса</h2>
+        </div>
+        <div class="benefits__grid">
+          <article class="benefit" data-aos="fade-up">
+            <h3>Серверная надёжность</h3>
+            <p>Каждая сборка проходит стресс-тесты AIDA64, 3DMark Solar Bay и OCCT с имитацией летней жары.</p>
+          </article>
+          <article class="benefit" data-aos="fade-up" data-aos-delay="100">
+            <h3>Экосистема NEO HUB</h3>
+            <p>Управляйте подсветкой, обновлениями драйверов и режимами охлаждения из единого приложения.</p>
+          </article>
+          <article class="benefit" data-aos="fade-up" data-aos-delay="200">
+            <h3>Личный инженер</h3>
+            <p>Закрепляем специалиста, который подбирает комплектующие, настраивает ПО и обучает вас.</p>
+          </article>
+          <article class="benefit" data-aos="fade-up" data-aos-delay="300">
+            <h3>Эстетика 2025</h3>
+            <p>Стекло с антибликом, алюминий с керамическим напылением, кастомные панели с AR-графикой.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" aria-labelledby="process-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Как мы работаем</p>
+          <h2 id="process-title">От идеи до вашего стола — за 5 шагов</h2>
+        </div>
+        <ol class="process__steps" data-aos="fade-up">
+          <li>
+            <span class="step">1</span>
+            <h3>Диагностика задач</h3>
+            <p>Созваниваемся, обсуждаем сценарии, проводим бенчмарки ваших приложений.</p>
+          </li>
+          <li>
+            <span class="step">2</span>
+            <h3>Конфигурация</h3>
+            <p>Инженер собирает конфигурацию с учётом бюджета и апгрейдов на 3 года вперёд.</p>
+          </li>
+          <li>
+            <span class="step">3</span>
+            <h3>Сборка и тесты</h3>
+            <p>Проводим сборку в чистой зоне, делаем термографии и стресс-тесты.</p>
+          </li>
+          <li>
+            <span class="step">4</span>
+            <h3>Доставка и запуск</h3>
+            <p>Привозим, настраиваем место, проводим инструктаж и создаём образ восстановления.</p>
+          </li>
+          <li>
+            <span class="step">5</span>
+            <h3>Поддержка 24/7</h3>
+            <p>Личный инженер остаётся на связи, проводит обслуживание и апгрейды.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="stats" aria-label="Статистика">
+        <div class="stat-card" data-aos="flip-left">
+          <h3>98%</h3>
+          <p>клиентов возвращаются за апгрейдами в течение первого года</p>
+        </div>
+        <div class="stat-card" data-aos="flip-left" data-aos-delay="100">
+          <h3>5,2 ГГц</h3>
+          <p>средний стабильный буст частоты после нашего андервольтинга</p>
+        </div>
+        <div class="stat-card" data-aos="flip-left" data-aos-delay="200">
+          <h3>27%</h3>
+          <p>снижение шума благодаря кастомным профилям охлаждения</p>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Отзывы 2025</p>
+          <h2 id="testimonials-title">Нам доверяют студии, стримеры и продакшн-команды</h2>
+        </div>
+        <div class="testimonials__grid">
+          <figure class="testimonial" data-aos="fade-up">
+            <blockquote>
+              «NEOCRAFT собрали сетап для метавселенной. RTX 5090 Apex держит 4 стрима и VR без лагов.»
+            </blockquote>
+            <figcaption>
+              <span class="name">Студия Metaforge</span>
+              <span class="role">XR / VR продакшн</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial" data-aos="fade-up" data-aos-delay="120">
+            <blockquote>
+              «Рендеры Redshift стали быстрее на 38%. Понравился мониторинг температуры через приложение.»
+            </blockquote>
+            <figcaption>
+              <span class="name">Инга Верес</span>
+              <span class="role">3D-художник</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial" data-aos="fade-up" data-aos-delay="240">
+            <blockquote>
+              «Тихо, мощно, светится как надо. Личный инженер решает вопросы за минуты.»
+            </blockquote>
+            <figcaption>
+              <span class="name">SkyRage</span>
+              <span class="role">Стример Twitch</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="cta__card" data-aos="zoom-in">
+          <div>
+            <p class="eyebrow">Готовы ускориться?</p>
+            <h2 id="cta-title">Получите персональный проект сборки</h2>
+            <p>Заполните форму, и мы подготовим три варианта сборки за 24 часа.</p>
+          </div>
+          <button class="btn primary" data-scroll="#contact">Оставить заявку</button>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" aria-labelledby="faq-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Частые вопросы</p>
+          <h2 id="faq-title">Прозрачность и комфорт на каждом этапе</h2>
+        </div>
+        <div class="accordion" data-aos="fade-up">
+          <details>
+            <summary>Сколько времени занимает сборка?</summary>
+            <p>Стандартный цикл — 5 рабочих дней. Срочная сборка за 72 часа доступна при наличии комплектующих.</p>
+          </details>
+          <details>
+            <summary>Можно ли использовать свои комплектующие?</summary>
+            <p>Да, мы интегрируем ваши детали после диагностики и тестов совместимости.</p>
+          </details>
+          <details>
+            <summary>Какая гарантия?</summary>
+            <p>3 года на работу, 1-4 года на комплектующие. Обслуживание на дому в Москве и Санкт-Петербурге.</p>
+          </details>
+          <details>
+            <summary>Даете ли вы софт для мониторинга?</summary>
+            <p>Да, приложение NEO HUB с мобильным доступом. Настраиваем уведомления и обновления.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow">Связаться с нами</p>
+          <h2 id="contact-title">Мы подготовим для вас персональный бриф</h2>
+        </div>
+        <div class="contact__grid">
+          <form class="contact__form" aria-label="Форма консультации" data-aos="fade-right">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Алексей" required />
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.ru" required />
+            </div>
+            <div class="field">
+              <label for="message">Задачи</label>
+              <textarea id="message" name="message" rows="4" placeholder="Игры в 4K, стриминг, VR..." required></textarea>
+            </div>
+            <label class="checkbox checkbox--frost">
+              <input type="checkbox" name="consent" required />
+              <span>Согласен на обработку персональных данных</span>
+            </label>
+            <button class="btn primary full" type="submit">Отправить запрос</button>
+          </form>
+
+          <aside class="contact__info" data-aos="fade-left">
+            <div class="info-card">
+              <h3>Премиум-шоурум</h3>
+              <p>Москва, Пресненская набережная 12, башня Evolution</p>
+              <p>Пн-Вс: 11:00 — 21:00</p>
+            </div>
+            <div class="info-card">
+              <h3>Поддержка</h3>
+              <p>Телеграм: @neocraft_support</p>
+              <p>Телефон: +7 495 777-20-25</p>
+              <p>Email: support@neocraft.pc</p>
+            </div>
+            <div class="info-card">
+              <h3>Мы в соцсетях</h3>
+              <ul>
+                <li><a href="#">VK Видео</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Telegram</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="logo">NEOCRAFT<span>PC</span></div>
+        <div class="footer__links">
+          <a href="#hero">Главная</a>
+          <a href="#configurator">Конфигуратор</a>
+          <a href="#lineup">Коллекции</a>
+          <a href="#contact">Консультация</a>
+        </div>
+        <div class="footer__legal">
+          <span>© 2025 NEOCRAFT PC</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <p class="footer__note">NEOCRAFT PC — кастомные ПК с доставкой по России, поддержка 24/7, премиальный сервис.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
